@@ -34,10 +34,28 @@ export default defineConfig({
         path: "src/content/blog",
         fields: [
           {
+            type: "image",
+            name: "heroImage",
+            label: "Image",
+            required: true,
+          },
+          {
             type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "pubDate",
+            label: "Pub Date",
             required: true,
           },
           {
